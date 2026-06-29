@@ -1,0 +1,86 @@
+---
+title: "WhatsApp"
+description: "Connect WhatsApp to Vivacity - business messaging."
+icon: "comments"
+---
+
+<Info>
+  **Category:** Messaging · **Access:** read-only at setup · **Actions:** drafted for your approval
+</Info>
+
+Connect **WhatsApp** so Vivacity can see your messaging channels and help you act on it. Your data stays **read-only** while Vivacity learns. Anything it suggests is **drafted for you to approve** - it never sends or changes anything in WhatsApp without your sign-off.
+
+## What Vivacity does with WhatsApp
+
+- Draft messages and alerts in your voice.
+- Route conversations and flag what needs you.
+- Never send without your explicit approval.
+
+## What syncs
+
+Vivacity reads the following from WhatsApp (read-only):
+
+- Message threads you connect, for drafting
+- Delivery and read status where available
+
+<Note>Vivacity only ever **reads** the data you connect. It does not write back to WhatsApp unless you explicitly approve an action.</Note>
+
+## Connect WhatsApp
+
+<Steps>
+  <Step title="Open Connectors">
+    In Vivacity, go to **Settings → Connectors**.
+  </Step>
+  <Step title="Choose WhatsApp">
+    Find **WhatsApp** under **Messaging** and select **Connect**.
+  </Step>
+  <Step title="Authorise with WhatsApp">
+    You'll be redirected to WhatsApp to sign in and approve **read-only** access. Vivacity never sees your WhatsApp password.
+  </Step>
+  <Step title="Choose what to share">
+    Pick the account, store or property to sync, then confirm.
+  </Step>
+  <Step title="Confirm the connection">
+    Vivacity runs a first sync. You'll see a **Connected** badge when it's ready (usually a few minutes).
+  </Step>
+</Steps>
+
+## Permissions & security
+
+- **Read-only by default.** Setup grants read access only.
+- **You stay in control.** Every suggested action is drafted for your approval before anything happens.
+- **Encrypted & revocable.** Credentials are stored encrypted; disconnect any time in **Settings → Connectors**.
+
+See [Data & permissions](/connectors/data-and-permissions) for the full picture.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="The connection failed or won't authorise">
+    Make sure you're signed in to the correct WhatsApp account with admin access, then retry. If a pop-up was blocked, allow pop-ups for Vivacity and try again. Still stuck? See [Connection issues](/troubleshooting/connection-issues).
+  </Accordion>
+  <Accordion title="My WhatsApp data looks out of date">
+    Vivacity syncs on a schedule. Trigger a manual sync from **Settings → Connectors → WhatsApp → Sync now**, or see [Data & sync](/troubleshooting/data-and-sync).
+  </Accordion>
+  <Accordion title="I see “Reconnect required”">
+    WhatsApp access can expire or be revoked. Open the connector and select **Reconnect** to restore it - your history is kept.
+  </Accordion>
+</AccordionGroup>
+
+## Watch: connecting WhatsApp
+
+<Frame>
+  {/* Replace the src with your Loom / YouTube / Vimeo embed for WhatsApp. */}
+  <iframe
+    width="100%"
+    height="400"
+    src="about:blank"
+    title="Connecting WhatsApp to Vivacity"
+    frameborder="0"
+    allowfullscreen
+  ></iframe>
+</Frame>
+
+<Card title="Browse all connectors" icon="grid-2" href="/connectors/introduction">
+  See every tool you can connect to Vivacity.
+</Card>

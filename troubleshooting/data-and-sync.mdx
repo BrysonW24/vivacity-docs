@@ -1,0 +1,34 @@
+---
+title: "Data & sync"
+description: "Fix missing, stale or mismatched data."
+icon: "rotate"
+---
+
+<AccordionGroup>
+  <Accordion title="I just connected a tool but see no data">
+    The first sync may still be running. Large histories take longer. Wait a few minutes, then check the connector shows **Connected** (not *Syncing*). You'll get a notification when your first briefing is ready.
+  </Accordion>
+  <Accordion title="My data looks out of date">
+    Vivacity refreshes on a schedule. To pull the latest immediately, use **Settings → Connectors → [tool] → Sync now**.
+  </Accordion>
+  <Accordion title="The numbers don't match my tool exactly">
+    Small differences usually come from **time zones**, **date ranges**, or how a metric is defined (e.g. gross vs net revenue, when a refund is counted). Check you're comparing the same window and definition. If a number looks genuinely wrong, contact support with an example.
+  </Accordion>
+  <Accordion title="Some history is missing">
+    Connectors load recent history first, then backfill. Very old data may take time, and some tools limit how far back their API allows. If you need a specific older period, let us know.
+  </Accordion>
+  <Accordion title="A connector says “Manual fallback”">
+    A direct connection isn't available for that tool yet. Import the data manually (for example via a [Google Sheet](/connectors/productivity/googlesheets)) until the direct connector ships.
+  </Accordion>
+  <Accordion title="I disconnected a tool - what happens to its data?">
+    It stops appearing in new briefings and answers. Reconnect any time; Vivacity re-reads your history to rebuild the picture.
+  </Accordion>
+</AccordionGroup>
+
+## How syncing works
+
+For the full mechanics - first sync, refresh schedule, manual sync, rate limits - see [How connectors work](/connectors/how-connectors-work).
+
+<Note>
+  Still seeing a problem? Email **support@vivacity.ai** with the tool, the metric, and the period you're comparing - a screenshot of both sides helps us spot it fast.
+</Note>

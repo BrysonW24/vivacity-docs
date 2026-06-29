@@ -1,0 +1,86 @@
+---
+title: "Google Sheets"
+description: "Connect Google Sheets to Vivacity - import a crm or lead list."
+icon: "list-check"
+---
+
+<Info>
+  **Category:** Productivity · **Access:** read-only at setup · **Actions:** drafted for your approval
+</Info>
+
+Connect **Google Sheets** so Vivacity can see your workspace tools and help you act on it. Your data stays **read-only** while Vivacity learns. Anything it suggests is **drafted for you to approve** - it never sends or changes anything in Google Sheets without your sign-off.
+
+## What Vivacity does with Google Sheets
+
+- Read the documents and records you share.
+- Summarise and answer questions over them.
+- Draft updates for your approval.
+
+## What syncs
+
+Vivacity reads the following from Google Sheets (read-only):
+
+- Rows from the sheets you share (e.g. a CRM or lead list)
+- Used to import contacts and records, read-only
+
+<Note>Vivacity only ever **reads** the data you connect. It does not write back to Google Sheets unless you explicitly approve an action.</Note>
+
+## Connect Google Sheets
+
+<Steps>
+  <Step title="Open Connectors">
+    In Vivacity, go to **Settings → Connectors**.
+  </Step>
+  <Step title="Choose Google Sheets">
+    Find **Google Sheets** under **Productivity** and select **Connect**.
+  </Step>
+  <Step title="Authorise with Google Sheets">
+    You'll be redirected to Google Sheets to sign in and approve **read-only** access. Vivacity never sees your Google Sheets password.
+  </Step>
+  <Step title="Choose what to share">
+    Pick the account, store or property to sync, then confirm.
+  </Step>
+  <Step title="Confirm the connection">
+    Vivacity runs a first sync. You'll see a **Connected** badge when it's ready (usually a few minutes).
+  </Step>
+</Steps>
+
+## Permissions & security
+
+- **Read-only by default.** Setup grants read access only.
+- **You stay in control.** Every suggested action is drafted for your approval before anything happens.
+- **Encrypted & revocable.** Credentials are stored encrypted; disconnect any time in **Settings → Connectors**.
+
+See [Data & permissions](/connectors/data-and-permissions) for the full picture.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="The connection failed or won't authorise">
+    Make sure you're signed in to the correct Google Sheets account with admin access, then retry. If a pop-up was blocked, allow pop-ups for Vivacity and try again. Still stuck? See [Connection issues](/troubleshooting/connection-issues).
+  </Accordion>
+  <Accordion title="My Google Sheets data looks out of date">
+    Vivacity syncs on a schedule. Trigger a manual sync from **Settings → Connectors → Google Sheets → Sync now**, or see [Data & sync](/troubleshooting/data-and-sync).
+  </Accordion>
+  <Accordion title="I see “Reconnect required”">
+    Google Sheets access can expire or be revoked. Open the connector and select **Reconnect** to restore it - your history is kept.
+  </Accordion>
+</AccordionGroup>
+
+## Watch: connecting Google Sheets
+
+<Frame>
+  {/* Replace the src with your Loom / YouTube / Vimeo embed for Google Sheets. */}
+  <iframe
+    width="100%"
+    height="400"
+    src="about:blank"
+    title="Connecting Google Sheets to Vivacity"
+    frameborder="0"
+    allowfullscreen
+  ></iframe>
+</Frame>
+
+<Card title="Browse all connectors" icon="grid-2" href="/connectors/introduction">
+  See every tool you can connect to Vivacity.
+</Card>

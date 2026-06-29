@@ -1,0 +1,86 @@
+---
+title: "Asana"
+description: "Connect Asana to Vivacity - tasks, projects and teams."
+icon: "list-check"
+---
+
+<Info>
+  **Category:** Productivity · **Access:** read-only at setup · **Actions:** drafted for your approval
+</Info>
+
+Connect **Asana** so Vivacity can see your workspace tools and help you act on it. Your data stays **read-only** while Vivacity learns. Anything it suggests is **drafted for you to approve** - it never sends or changes anything in Asana without your sign-off.
+
+## What Vivacity does with Asana
+
+- Read the documents and records you share.
+- Summarise and answer questions over them.
+- Draft updates for your approval.
+
+## What syncs
+
+Vivacity reads the following from Asana (read-only):
+
+- The documents, sheets or records you share
+- Rows, pages and file metadata you grant access to
+
+<Note>Vivacity only ever **reads** the data you connect. It does not write back to Asana unless you explicitly approve an action.</Note>
+
+## Connect Asana
+
+<Steps>
+  <Step title="Open Connectors">
+    In Vivacity, go to **Settings → Connectors**.
+  </Step>
+  <Step title="Choose Asana">
+    Find **Asana** under **Productivity** and select **Connect**.
+  </Step>
+  <Step title="Authorise with Asana">
+    You'll be redirected to Asana to sign in and approve **read-only** access. Vivacity never sees your Asana password.
+  </Step>
+  <Step title="Choose what to share">
+    Pick the account, store or property to sync, then confirm.
+  </Step>
+  <Step title="Confirm the connection">
+    Vivacity runs a first sync. You'll see a **Connected** badge when it's ready (usually a few minutes).
+  </Step>
+</Steps>
+
+## Permissions & security
+
+- **Read-only by default.** Setup grants read access only.
+- **You stay in control.** Every suggested action is drafted for your approval before anything happens.
+- **Encrypted & revocable.** Credentials are stored encrypted; disconnect any time in **Settings → Connectors**.
+
+See [Data & permissions](/connectors/data-and-permissions) for the full picture.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="The connection failed or won't authorise">
+    Make sure you're signed in to the correct Asana account with admin access, then retry. If a pop-up was blocked, allow pop-ups for Vivacity and try again. Still stuck? See [Connection issues](/troubleshooting/connection-issues).
+  </Accordion>
+  <Accordion title="My Asana data looks out of date">
+    Vivacity syncs on a schedule. Trigger a manual sync from **Settings → Connectors → Asana → Sync now**, or see [Data & sync](/troubleshooting/data-and-sync).
+  </Accordion>
+  <Accordion title="I see “Reconnect required”">
+    Asana access can expire or be revoked. Open the connector and select **Reconnect** to restore it - your history is kept.
+  </Accordion>
+</AccordionGroup>
+
+## Watch: connecting Asana
+
+<Frame>
+  {/* Replace the src with your Loom / YouTube / Vimeo embed for Asana. */}
+  <iframe
+    width="100%"
+    height="400"
+    src="about:blank"
+    title="Connecting Asana to Vivacity"
+    frameborder="0"
+    allowfullscreen
+  ></iframe>
+</Frame>
+
+<Card title="Browse all connectors" icon="grid-2" href="/connectors/introduction">
+  See every tool you can connect to Vivacity.
+</Card>

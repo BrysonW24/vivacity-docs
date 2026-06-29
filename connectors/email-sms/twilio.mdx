@@ -1,0 +1,87 @@
+---
+title: "Twilio"
+description: "Connect Twilio to Vivacity - sms, voice and messaging."
+icon: "envelope"
+---
+
+<Info>
+  **Category:** Email & SMS · **Access:** read-only at setup · **Actions:** drafted for your approval
+</Info>
+
+Connect **Twilio** so Vivacity can see your messaging tools and help you act on it. Your data stays **read-only** while Vivacity learns. Anything it suggests is **drafted for you to approve** - it never sends or changes anything in Twilio without your sign-off.
+
+## What Vivacity does with Twilio
+
+- Read campaign and flow performance.
+- Draft replies and follow-ups in your voice.
+- Never send without your explicit approval.
+
+## What syncs
+
+Vivacity reads the following from Twilio (read-only):
+
+- Campaigns, flows and automations
+- Opens, clicks, unsubscribes and attributed revenue
+- Audience and list growth
+
+<Note>Vivacity only ever **reads** the data you connect. It does not write back to Twilio unless you explicitly approve an action.</Note>
+
+## Connect Twilio
+
+<Steps>
+  <Step title="Open Connectors">
+    In Vivacity, go to **Settings → Connectors**.
+  </Step>
+  <Step title="Choose Twilio">
+    Find **Twilio** under **Email & SMS** and select **Connect**.
+  </Step>
+  <Step title="Add your Twilio API key">
+    Paste your Twilio API key when prompted. Vivacity stores it **encrypted** and uses it only to read the data you approve. (Find the key in your Twilio account settings.)
+  </Step>
+  <Step title="Choose what to share">
+    Pick the account, store or property to sync, then confirm.
+  </Step>
+  <Step title="Confirm the connection">
+    Vivacity runs a first sync. You'll see a **Connected** badge when it's ready (usually a few minutes).
+  </Step>
+</Steps>
+
+## Permissions & security
+
+- **Read-only by default.** Setup grants read access only.
+- **You stay in control.** Every suggested action is drafted for your approval before anything happens.
+- **Encrypted & revocable.** Credentials are stored encrypted; disconnect any time in **Settings → Connectors**.
+
+See [Data & permissions](/connectors/data-and-permissions) for the full picture.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="The connection failed or won't authorise">
+    Make sure you're signed in to the correct Twilio account with admin access, then retry. If a pop-up was blocked, allow pop-ups for Vivacity and try again. Still stuck? See [Connection issues](/troubleshooting/connection-issues).
+  </Accordion>
+  <Accordion title="My Twilio data looks out of date">
+    Vivacity syncs on a schedule. Trigger a manual sync from **Settings → Connectors → Twilio → Sync now**, or see [Data & sync](/troubleshooting/data-and-sync).
+  </Accordion>
+  <Accordion title="I see “Reconnect required”">
+    Twilio access can expire or be revoked. Open the connector and select **Reconnect** to restore it - your history is kept.
+  </Accordion>
+</AccordionGroup>
+
+## Watch: connecting Twilio
+
+<Frame>
+  {/* Replace the src with your Loom / YouTube / Vimeo embed for Twilio. */}
+  <iframe
+    width="100%"
+    height="400"
+    src="about:blank"
+    title="Connecting Twilio to Vivacity"
+    frameborder="0"
+    allowfullscreen
+  ></iframe>
+</Frame>
+
+<Card title="Browse all connectors" icon="grid-2" href="/connectors/introduction">
+  See every tool you can connect to Vivacity.
+</Card>

@@ -1,0 +1,48 @@
+---
+title: "Manage connections"
+description: "Add, reconnect, disconnect and control who can manage connectors."
+icon: "sliders"
+---
+
+All your connections live in **Settings → Connectors**. Here's how to manage them.
+
+## Add a connection
+
+<Steps>
+  <Step title="Open Settings → Connectors" />
+  <Step title="Find your tool by category and select Connect" />
+  <Step title="Authorise read-only access and choose what to share" />
+</Steps>
+
+Each tool's page has exact steps - browse the [connector library](/connectors/introduction).
+
+## Reconnect or sync
+
+- **Reconnect** - when a connector shows *Reconnect required*, open it and select **Reconnect**. History is preserved.
+- **Sync now** - force a fresh read with **Sync now** on the connector.
+
+## Disconnect a tool
+
+Open the connector and select **Disconnect**. Vivacity stops reading immediately. You can reconnect later; reconnecting re-reads your history to rebuild the picture.
+
+<Note>
+  Disconnecting a tool removes it from future briefings and answers. It does **not** change anything inside the tool itself.
+</Note>
+
+## Who can manage connections
+
+Connectors are a **workspace-level** setting:
+
+- **Owners & admins** can add, remove, and decide who's allowed to create connections.
+- **Members** use the connections they've been granted access to.
+- Sensitive connections (e.g. email, payments) can be restricted to admins.
+
+Manage roles in **Settings → Team**. See [Account & billing](/account/account-and-billing) for workspace and team settings.
+
+## Connection access
+
+When you create a connection you can choose who can use it - just you, specific teammates, or the whole workspace. This keeps sensitive sources (like an inbox or payment account) limited to the right people.
+
+<Card title="What each connection can see" icon="shield-halved" href="/connectors/data-and-permissions">
+  The data, permissions and privacy detail.
+</Card>

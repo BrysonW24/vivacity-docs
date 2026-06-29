@@ -1,0 +1,87 @@
+---
+title: "Zoho CRM"
+description: "Connect Zoho CRM to Vivacity - leads, contacts and deals."
+icon: "address-book"
+---
+
+<Info>
+  **Category:** CRM · **Access:** read-only at setup · **Actions:** drafted for your approval
+</Info>
+
+Connect **Zoho CRM** so Vivacity can see your CRM and help you act on it. Your data stays **read-only** while Vivacity learns. Anything it suggests is **drafted for you to approve** - it never sends or changes anything in Zoho CRM without your sign-off.
+
+## What Vivacity does with Zoho CRM
+
+- Read contacts, deals and pipeline stages (read-only).
+- Rank who to contact next and explain why.
+- Draft outreach and follow-ups for your approval.
+
+## What syncs
+
+Vivacity reads the following from Zoho CRM (read-only):
+
+- Contacts, companies and leads
+- Deals / opportunities and pipeline stages
+- Activity, notes and record owners
+
+<Note>Vivacity only ever **reads** the data you connect. It does not write back to Zoho CRM unless you explicitly approve an action.</Note>
+
+## Connect Zoho CRM
+
+<Steps>
+  <Step title="Open Connectors">
+    In Vivacity, go to **Settings → Connectors**.
+  </Step>
+  <Step title="Choose Zoho CRM">
+    Find **Zoho CRM** under **CRM** and select **Connect**.
+  </Step>
+  <Step title="Authorise with Zoho CRM">
+    You'll be redirected to Zoho CRM to sign in and approve **read-only** access. Vivacity never sees your Zoho CRM password.
+  </Step>
+  <Step title="Choose what to share">
+    Pick the account, store or property to sync, then confirm.
+  </Step>
+  <Step title="Confirm the connection">
+    Vivacity runs a first sync. You'll see a **Connected** badge when it's ready (usually a few minutes).
+  </Step>
+</Steps>
+
+## Permissions & security
+
+- **Read-only by default.** Setup grants read access only.
+- **You stay in control.** Every suggested action is drafted for your approval before anything happens.
+- **Encrypted & revocable.** Credentials are stored encrypted; disconnect any time in **Settings → Connectors**.
+
+See [Data & permissions](/connectors/data-and-permissions) for the full picture.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="The connection failed or won't authorise">
+    Make sure you're signed in to the correct Zoho CRM account with admin access, then retry. If a pop-up was blocked, allow pop-ups for Vivacity and try again. Still stuck? See [Connection issues](/troubleshooting/connection-issues).
+  </Accordion>
+  <Accordion title="My Zoho CRM data looks out of date">
+    Vivacity syncs on a schedule. Trigger a manual sync from **Settings → Connectors → Zoho CRM → Sync now**, or see [Data & sync](/troubleshooting/data-and-sync).
+  </Accordion>
+  <Accordion title="I see “Reconnect required”">
+    Zoho CRM access can expire or be revoked. Open the connector and select **Reconnect** to restore it - your history is kept.
+  </Accordion>
+</AccordionGroup>
+
+## Watch: connecting Zoho CRM
+
+<Frame>
+  {/* Replace the src with your Loom / YouTube / Vimeo embed for Zoho CRM. */}
+  <iframe
+    width="100%"
+    height="400"
+    src="about:blank"
+    title="Connecting Zoho CRM to Vivacity"
+    frameborder="0"
+    allowfullscreen
+  ></iframe>
+</Frame>
+
+<Card title="Browse all connectors" icon="grid-2" href="/connectors/introduction">
+  See every tool you can connect to Vivacity.
+</Card>

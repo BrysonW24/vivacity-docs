@@ -1,0 +1,13 @@
+# Mintlify / Node
+node_modules/
+.mintlify/
+.next/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local env
+.env
+.env.local

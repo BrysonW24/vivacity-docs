@@ -1,0 +1,216 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Vivacity",
+  "description": "Help and product docs for Vivacity - connect your tools, see what's happening, and act with confidence.",
+  "colors": {
+    "primary": "#0C8CE0",
+    "light": "#27C0FE",
+    "dark": "#0A6CB0"
+  },
+  "favicon": "/favicon.png",
+  "logo": {
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png",
+    "href": "https://vivacity.ai"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:support@vivacity.ai"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Open Vivacity",
+      "href": "https://app.vivacity.ai"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Get started",
+            "icon": "play",
+            "pages": [
+              "index",
+              "getting-started/quickstart",
+              "getting-started/how-vivacity-works",
+              "getting-started/connect-your-first-source"
+            ]
+          },
+          {
+            "group": "Using Vivacity",
+            "icon": "wand-magic-sparkles",
+            "pages": [
+              "features/overview",
+              "features/daily-briefing",
+              "features/ask-vivacity",
+              "features/recommendations-and-approvals"
+            ]
+          },
+          {
+            "group": "Connectors",
+            "icon": "plug",
+            "pages": [
+              "connectors/introduction",
+              "connectors/how-connectors-work",
+              "connectors/manage-connections",
+              "connectors/data-and-permissions"
+            ]
+          },
+          {
+            "group": "Tips & best practices",
+            "icon": "lightbulb",
+            "pages": [
+              "best-practices/get-the-most-from-vivacity",
+              "best-practices/writing-good-questions"
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "icon": "wrench",
+            "pages": [
+              "troubleshooting/overview",
+              "troubleshooting/connection-issues",
+              "troubleshooting/data-and-sync",
+              "troubleshooting/faq"
+            ]
+          },
+          {
+            "group": "Videos",
+            "icon": "circle-play",
+            "pages": [
+              "videos/video-library"
+            ]
+          },
+          {
+            "group": "Account & security",
+            "icon": "shield-check",
+            "pages": [
+              "account/account-and-billing",
+              "account/security-and-privacy"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Connector library",
+        "groups": [
+          {
+            "group": "Ecommerce",
+            "icon": "cart-shopping",
+            "pages": [
+              "connectors/ecommerce/shopify",
+              "connectors/ecommerce/woocommerce",
+              "connectors/ecommerce/bigcommerce",
+              "connectors/ecommerce/squarespace",
+              "connectors/ecommerce/wix"
+            ]
+          },
+          {
+            "group": "Advertising",
+            "icon": "bullhorn",
+            "pages": [
+              "connectors/advertising/meta",
+              "connectors/advertising/googleads",
+              "connectors/advertising/tiktok",
+              "connectors/advertising/linkedin"
+            ]
+          },
+          {
+            "group": "Email & SMS",
+            "icon": "envelope",
+            "pages": [
+              "connectors/email-sms/klaviyo",
+              "connectors/email-sms/mailchimp",
+              "connectors/email-sms/brevo",
+              "connectors/email-sms/resend",
+              "connectors/email-sms/gmail",
+              "connectors/email-sms/outlook",
+              "connectors/email-sms/twilio"
+            ]
+          },
+          {
+            "group": "CRM",
+            "icon": "address-book",
+            "pages": [
+              "connectors/crm/hubspot",
+              "connectors/crm/salesforce",
+              "connectors/crm/pipedrive",
+              "connectors/crm/zoho",
+              "connectors/crm/agentbox"
+            ]
+          },
+          {
+            "group": "Finance",
+            "icon": "money-bill-wave",
+            "pages": [
+              "connectors/finance/xero",
+              "connectors/finance/stripe",
+              "connectors/finance/quickbooks",
+              "connectors/finance/wave"
+            ]
+          },
+          {
+            "group": "Analytics",
+            "icon": "chart-line",
+            "pages": [
+              "connectors/analytics/googleanalytics",
+              "connectors/analytics/googlesearchconsole",
+              "connectors/analytics/semrush"
+            ]
+          },
+          {
+            "group": "Calendar",
+            "icon": "calendar",
+            "pages": [
+              "connectors/calendar/googlecalendar",
+              "connectors/calendar/calendly"
+            ]
+          },
+          {
+            "group": "Productivity",
+            "icon": "list-check",
+            "pages": [
+              "connectors/productivity/googlesheets",
+              "connectors/productivity/googledrive",
+              "connectors/productivity/googledocs",
+              "connectors/productivity/notion",
+              "connectors/productivity/airtable",
+              "connectors/productivity/slack",
+              "connectors/productivity/teams",
+              "connectors/productivity/trello",
+              "connectors/productivity/asana"
+            ]
+          },
+          {
+            "group": "Messaging",
+            "icon": "comments",
+            "pages": [
+              "connectors/messaging/whatsapp",
+              "connectors/messaging/telegram",
+              "connectors/messaging/discord"
+            ]
+          },
+          {
+            "group": "AI",
+            "icon": "robot",
+            "pages": [
+              "connectors/ai/openai",
+              "connectors/ai/anthropic"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "socials": {
+      "website": "https://vivacity.ai"
+    }
+  }
+}
