@@ -1,87 +1,79 @@
 ---
 title: "Xero"
-description: "Connect Xero to Vivacity - invoices and cash position."
+description: "What connecting Xero lets Vivacity do, what it reads, and how to disconnect."
 icon: "money-bill-wave"
 ---
 
+<Warning>
+  **Not available yet.** The Xero connection is built but switched off while we test it. It has not been run against a real business's Xero. Xero also has to approve how we use its data before any business can connect. This page describes how it will work when it is switched on.
+</Warning>
+
 <Info>
-  **Category:** Finance · **Access:** read-only at setup · **Actions:** drafted for your approval
+  **Read only.** Vivacity never writes to, changes or deletes anything in your Xero.
 </Info>
 
-Connect **Xero** so Vivacity can see your accounting and payments and help you act on it. Your data stays **read-only** while Vivacity learns. Anything it suggests is **drafted for you to approve** - it never sends or changes anything in Xero without your sign-off.
+## What connecting Xero lets Vivacity do
 
-## What Vivacity does with Xero
+When you open a customer's enquiry, owners and admins see that customer's recent invoices from Xero beside it, and whether anything is overdue. That helps you reply knowing where the account stands.
 
-- Read invoices, payments and cash position (read-only).
-- Surface overdue invoices and cash-flow risks.
-- Draft polite payment reminders for your approval.
+## Exactly what it reads
 
-## What syncs
+You choose **one** Xero organisation when you connect. Then, only for an enquiry you pick, Vivacity reads:
 
-Vivacity reads the following from Xero (read-only):
+- the Xero contact with the same email address as the enquiry;
+- up to 10 of that contact's sales invoices from the last 12 months;
+- whether that contact has anything overdue.
 
-- Invoices, bills and payment status
-- Payments, payouts and subscription revenue
-- Cash position and overdue balances
+Xero's permission screen covers all contacts, invoices, quotes and credit notes. Our code reads only the items above.
 
-<Note>Vivacity only ever **reads** the data you connect. It does not write back to Xero unless you explicitly approve an action.</Note>
+## What it writes
 
-## Connect Xero
+Nothing. Vivacity has no way to change your Xero.
 
-<Steps>
-  <Step title="Open Connectors">
-    In Vivacity, go to **Settings → Connectors**.
-  </Step>
-  <Step title="Choose Xero">
-    Find **Xero** under **Finance** and select **Connect**.
-  </Step>
-  <Step title="Authorise with Xero">
-    You'll be redirected to Xero to sign in and approve **read-only** access. Vivacity never sees your Xero password.
-  </Step>
-  <Step title="Choose what to share">
-    Pick the account, store or property to sync, then confirm.
-  </Step>
-  <Step title="Confirm the connection">
-    Vivacity runs a first sync. You'll see a **Connected** badge when it's ready (usually a few minutes).
-  </Step>
-</Steps>
+## What it never does
 
-## Permissions & security
+- It never writes to Xero.
+- Invoice details never go into a reply and are never given to an AI model.
+- Only owners and admins in your workspace see them. Other team members do not.
+- It never shows one business's Xero to another business.
 
-- **Read-only by default.** Setup grants read access only.
-- **You stay in control.** Every suggested action is drafted for your approval before anything happens.
-- **Encrypted & revocable.** Credentials are stored encrypted; disconnect any time in **Settings → Connectors**.
+## Who can connect it
 
-See [Data & permissions](/connectors/data-and-permissions) for the full picture.
+An owner or admin of your workspace, from **Connections**, after reading and agreeing to the words on the Connect screen. You sign in on Xero's own page; Vivacity never sees your Xero password.
 
-## Troubleshooting
+## How to disconnect
 
-<AccordionGroup>
-  <Accordion title="The connection failed or won't authorise">
-    Make sure you're signed in to the correct Xero account with admin access, then retry. If a pop-up was blocked, allow pop-ups for Vivacity and try again. Still stuck? See [Connection issues](/troubleshooting/connection-issues).
-  </Accordion>
-  <Accordion title="My Xero data looks out of date">
-    Vivacity syncs on a schedule. Trigger a manual sync from **Settings → Connectors → Xero → Sync now**, or see [Data & sync](/troubleshooting/data-and-sync).
-  </Accordion>
-  <Accordion title="I see “Reconnect required”">
-    Xero access can expire or be revoked. Open the connector and select **Reconnect** to restore it - your history is kept.
-  </Accordion>
-</AccordionGroup>
+In Vivacity, open **Connections**, then **Disconnect** on the Xero card. Straight away we:
 
-## Watch: connecting Xero
+- end our access in Xero;
+- delete your sign-in from our sign-in service;
+- delete this connection's working copies.
 
-<Frame>
-  {/* Replace the src with your Loom / YouTube / Vimeo embed for Xero. */}
-  <iframe
-    width="100%"
-    height="400"
-    src="about:blank"
-    title="Connecting Xero to Vivacity"
-    frameborder="0"
-    allowfullscreen
-  ></iframe>
-</Frame>
+To double check, look at the connected apps in your Xero and make sure Vivacity is no longer listed.
 
-<Card title="Browse all connectors" icon="grid-2" href="/connectors/introduction">
-  See every tool you can connect to Vivacity.
+## What is kept, and for how long
+
+| What | How long |
+| --- | --- |
+| Working copies of what we read | 14 days, or until you disconnect |
+| Our receipts (record ids and checksums only, no invoice details) | Until you close your workspace |
+| Your consent record (which words you agreed to, and when) | Until you close your workspace |
+| Our sign-in service's request logs, which include the email looked up | Up to 15 days |
+
+## Who handles it
+
+- **Vivacity** stores it with Supabase in Sydney.
+- **Nango**, our sign-in service, runs outside Australia. It holds your Xero sign-in and logs the email we look up for 15 days.
+- **Lovable**, our app host, may process it outside Australia.
+
+## Something else we may ask later
+
+We have also built a way for Vivacity to learn about your business from your Xero contact list. It is switched off, and it will never run without its own wording and your separate agreement.
+
+## Questions
+
+Email [hello@vivacityai.com.au](mailto:hello@vivacityai.com.au).
+
+<Card title="ServiceM8" icon="screwdriver-wrench" href="/connectors/servicem8">
+  The other connection we are testing.
 </Card>
