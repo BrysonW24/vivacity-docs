@@ -1,0 +1,85 @@
+---
+title: "ServiceM8"
+description: "What connecting ServiceM8 lets Vivacity do, what it reads and writes, and how to disconnect."
+icon: "screwdriver-wrench"
+---
+
+<Warning>
+  **Not available yet.** The ServiceM8 connection is built but switched off while we test it. It has not been run against a real business's ServiceM8. This page describes how it will work when it is switched on.
+</Warning>
+
+## What connecting ServiceM8 lets Vivacity do
+
+- When an enquiry comes in, find the client it is from in your ServiceM8.
+- Once an owner or admin approves the exact change, add that enquiry to ServiceM8 as a client, a contact, a job in Quote status and a note.
+
+## Exactly what it reads
+
+- Your ServiceM8 account details, such as your business name.
+- The clients, contacts and open jobs that match an enquiry you pick, found by its email address or phone number.
+
+## What it writes, and the approval it waits for
+
+Nothing is written until an owner or admin in your workspace approves the exact change. You see the words that will go into ServiceM8 before anything is sent. Then Vivacity adds, once:
+
+- one client;
+- one contact;
+- one job in Quote status;
+- one note.
+
+Each job uses one of your ServiceM8 plan's monthly jobs. After writing, Vivacity reads each record back to check it matches what you approved.
+
+ServiceM8's permission screen also allows changing and deleting clients. Our code only adds. It never changes or deletes anything already in your ServiceM8.
+
+## What it never does
+
+- It never writes without an owner's or admin's approval of the exact change.
+- It never changes or deletes your existing records.
+- It never sends anything to your customers. You reply yourself.
+- Nothing read from ServiceM8 is given to an AI model, and nothing is used to train one.
+- It never shows one business's ServiceM8 to another business.
+
+## Who can connect it
+
+An owner or admin of your workspace, from **Connections**, after reading and agreeing to the words on the Connect screen. You sign in on ServiceM8's own page; Vivacity never sees your ServiceM8 password.
+
+## How to disconnect
+
+Disconnecting takes two steps, because ServiceM8 gives us no way to end our access from our side.
+
+<Steps>
+  <Step title="Disconnect in Vivacity">
+    Open **Connections**, then **Disconnect** on the ServiceM8 card. Straight away we stop reading and writing your ServiceM8, delete your sign-in from our sign-in service, cancel any changes waiting for approval and delete this connection's working copies.
+  </Step>
+  <Step title="Turn Vivacity off in ServiceM8">
+    In ServiceM8, go to **Account**, then **Features & Integrations**, find Vivacity in your add-ons and turn it off. We can't check this step for you.
+  </Step>
+</Steps>
+
+## What is kept, and for how long
+
+| What | How long |
+| --- | --- |
+| Records we added to your ServiceM8 | They are yours. They stay in ServiceM8 until you remove them |
+| Working copies of what we read | 14 days, or until you disconnect |
+| Our receipts (record ids and checksums only) | Until you close your workspace |
+| Your consent record (which words you agreed to, and when) | Until you close your workspace |
+| Our sign-in service's request logs, which include the email or phone number looked up | Up to 15 days |
+
+## Who handles it
+
+- **Vivacity** stores it with Supabase in Sydney.
+- **Nango**, our sign-in service, runs outside Australia. It holds your ServiceM8 sign-in and logs the email or phone number we look up for 15 days.
+- **Lovable**, our app host, may process it outside Australia.
+
+## Something else we may ask later
+
+We have also built a way for Vivacity to learn how your business runs from your ServiceM8 lists, such as your job categories and staff. It is switched off, and it will never run without its own wording and your separate agreement.
+
+## Questions
+
+Email [hello@vivacityai.com.au](mailto:hello@vivacityai.com.au).
+
+<Card title="Xero" icon="money-bill-wave" href="/connectors/finance/xero">
+  The other connection we are testing. Read only.
+</Card>

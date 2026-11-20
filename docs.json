@@ -57,6 +57,7 @@
             "icon": "plug",
             "pages": [
               "connectors/introduction",
+              "connectors/servicem8",
               "connectors/how-connectors-work",
               "connectors/manage-connections",
               "connectors/data-and-permissions"
