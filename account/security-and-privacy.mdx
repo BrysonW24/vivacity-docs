@@ -1,45 +1,39 @@
 ---
 title: "Security & privacy"
-description: "How Vivacity protects your account and your data."
+description: "Where your data is stored, who handles it, and what needs your approval."
 icon: "shield-check"
 ---
 
-Your business data is sensitive. Here's how Vivacity keeps it safe and private.
+## Kept to your business
 
-## Your data
+Each workspace is separate. Your records, drafts and logs are never shown to another business.
 
-<CardGroup cols={2}>
-  <Card title="Encrypted" icon="lock">
-    Data is encrypted in transit and at rest, including connector credentials.
-  </Card>
-  <Card title="Isolated per business" icon="building-lock">
-    Each workspace is kept strictly separate. Your data is never mixed with another business's.
-  </Card>
-  <Card title="Read-only by default" icon="eye">
-    Connectors read; they don't change. Outward actions require your approval.
-  </Card>
-  <Card title="Never sold or used to train" icon="ban">
-    Your data is used only to help you - never sold, never used to train third-party models.
-  </Card>
-</CardGroup>
+## Who handles your data
 
-## Your account
+| Who | What for | Where |
+| --- | --- | --- |
+| **Supabase** | Stores your workspace's records | Sydney |
+| **Lovable** | Hosts the app | May process data outside Australia |
+| **An AI model, reached through Lovable** | Drafts a reply from an enquiry you paste in. The enquiry text is sent to it | Outside Australia |
+| **Lovable Email** | Sends sign-in emails | Outside Australia |
+| **Nango** (only once a connection is switched on) | Holds your sign-in to a connected app | Outside Australia |
 
-- **Secure sign-in** with modern authentication.
-- **Roles & permissions** so the right people see the right things - see [Account & billing](/account/account-and-billing).
-- **Connection-level access** to keep sensitive sources (inbox, payments) limited to admins.
-- **Revoke access** to any tool in one click.
+Vivacity does not use your data to train AI models, and does not sell it.
+
+## What needs your approval
+
+- Vivacity never sends a message for you. You send replies yourself.
+- Nothing is written to a connected app until an owner or admin approves the exact change.
+- Only owners and admins can connect or disconnect an app.
+
+## Connected apps
+
+Each connection has its own page saying exactly what it reads, what it writes, what is kept and for how long: [ServiceM8](/connectors/servicem8) and [Xero](/connectors/finance/xero). Neither is available yet.
 
 ## Australian privacy
 
-Vivacity is an Australian business and handles personal information in line with the **Australian Privacy Principles**. You can request access to, correction of, or deletion of your data, and connector data is removed when you disconnect a tool or close your workspace.
-
-## The approval gate (worth repeating)
-
-<Warning>
-  Reading your data never triggers an action. Anything that sends a message, contacts a customer or changes a connected system is **drafted and held for your explicit approval**.
-</Warning>
+Vivacity is an Australian business and handles personal information under the Australian Privacy Principles. You can ask to see, correct or delete your information.
 
 ## Report a concern
 
-Found something that doesn't look right, or have a security question? Email **support@vivacity.ai** and we'll respond quickly.
+Email [hello@vivacityai.com.au](mailto:hello@vivacityai.com.au).
