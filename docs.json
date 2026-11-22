@@ -1,39 +1,55 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Vivacity",
-  "description": "Help and product docs for Vivacity - connect your tools, see what's happening, and act with confidence.",
+  "name": "Vivacity AI guides",
+  "description": "Practical AI setup, coaching and automation guidance for Australian small businesses.",
   "colors": {
-    "primary": "#0C8CE0",
-    "light": "#27C0FE",
-    "dark": "#0A6CB0"
+    "primary": "#005EFF",
+    "light": "#005EFF",
+    "dark": "#005EFF"
   },
   "favicon": "/favicon.png",
   "logo": {
-    "light": "/logo/light.png",
-    "dark": "/logo/dark.png",
-    "href": "https://vivacity.ai"
+    "light": "/logo/vivacity-lockup.png",
+    "dark": "/logo/vivacity-lockup.png",
+    "href": "https://vivacityai.com.au"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:support@vivacity.ai"
+        "label": "Contact",
+        "href": "mailto:hello@vivacityai.com.au"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Open Vivacity",
-      "href": "https://app.vivacity.ai"
+      "label": "Explore Vivacity",
+      "href": "https://vivacityai.com.au"
+    }
+  },
+  "footer": {
+    "socials": {
+      "website": "https://vivacityai.com.au"
+    }
+  },
+  "appearance": {
+    "default": "light",
+    "strict": true
+  },
+  "fonts": {
+    "family": "Epilogue",
+    "heading": {
+      "family": "Instrument Serif",
+      "weight": 400
     }
   },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Practical guides",
         "groups": [
           {
-            "group": "Get started",
+            "group": "Start here",
             "icon": "play",
             "pages": [
               "index",
@@ -43,17 +59,28 @@
             ]
           },
           {
-            "group": "Using Vivacity",
-            "icon": "wand-magic-sparkles",
+            "group": "Use AI in your work",
+            "icon": "lightbulb",
             "pages": [
               "features/overview",
-              "features/daily-briefing",
               "features/ask-vivacity",
+              "features/daily-briefing",
               "features/recommendations-and-approvals"
             ]
           },
           {
-            "group": "Connectors",
+            "group": "AI tool guides",
+            "icon": "robot",
+            "pages": [
+              "tools/chatgpt",
+              "tools/claude",
+              "tools/gemini",
+              "tools/claude-code",
+              "tools/skills-and-mcp"
+            ]
+          },
+          {
+            "group": "Connections and data",
             "icon": "plug",
             "pages": [
               "connectors/introduction",
@@ -63,15 +90,15 @@
             ]
           },
           {
-            "group": "Tips & best practices",
-            "icon": "lightbulb",
+            "group": "Practical habits",
+            "icon": "list-check",
             "pages": [
               "best-practices/get-the-most-from-vivacity",
               "best-practices/writing-good-questions"
             ]
           },
           {
-            "group": "Troubleshooting",
+            "group": "Help",
             "icon": "wrench",
             "pages": [
               "troubleshooting/overview",
@@ -81,14 +108,14 @@
             ]
           },
           {
-            "group": "Videos",
+            "group": "Watch and learn",
             "icon": "circle-play",
             "pages": [
               "videos/video-library"
             ]
           },
           {
-            "group": "Account & security",
+            "group": "Working with Vivacity",
             "icon": "shield-check",
             "pages": [
               "account/account-and-billing",
@@ -98,7 +125,41 @@
         ]
       },
       {
-        "tab": "Connector library",
+        "tab": "The Vivacity app",
+        "groups": [
+          {
+            "group": "Start",
+            "icon": "rocket",
+            "pages": [
+              "app/overview",
+              "app/getting-started",
+              "app/finding-your-way-around"
+            ]
+          },
+          {
+            "group": "Everyday use",
+            "icon": "inbox",
+            "pages": [
+              "app/enquiries",
+              "app/assistant",
+              "app/sending"
+            ]
+          },
+          {
+            "group": "Connections",
+            "icon": "plug",
+            "pages": [
+              "app/connections/overview",
+              "app/connections/xero",
+              "app/connections/hubspot",
+              "app/connections/google-calendar",
+              "app/connections/gmail"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Tools to explore",
         "groups": [
           {
             "group": "Ecommerce",
@@ -207,10 +268,5 @@
         ]
       }
     ]
-  },
-  "footer": {
-    "socials": {
-      "website": "https://vivacity.ai"
-    }
   }
 }

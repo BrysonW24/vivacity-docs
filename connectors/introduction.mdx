@@ -1,75 +1,30 @@
 ---
-title: "Connectors"
-description: "Connect the tools you already use so Vivacity can see what's happening and help you act."
+title: "Tools and useful connections"
+description: "Explore the tools you use and decide when a connection is worthwhile."
 icon: "plug"
 ---
 
-**Connectors** link Vivacity to the tools you already run your business on - your store, ads, inbox, CRM, accounting and more. Connect a tool once and Vivacity can read it, fold it into your single picture, and draft actions for your approval.
+<Note>
+Using the Vivacity app? The apps it connects today are listed in [Connections](/app/connections/overview).
+</Note>
 
-<Info>
-  **The rule that never changes:** connectors are **read-only at setup**, and any action Vivacity takes in a connected tool is **drafted and held for your approval**. You're always in control.
-</Info>
+A connection lets one tool exchange information or actions with another. It can help with repeated work, but it also introduces permissions, cost and responsibility.
 
-## How connectors fit together
+Start with the task. Sometimes a sample document or manual export is enough; sometimes a scoped integration makes sense.
 
-| Type | What it's for | Examples |
-| :--- | :--- | :--- |
-| **Data sources** | Let Vivacity *see* what's happening so it can explain and recommend | Shopify, Xero, Meta Ads, HubSpot, GA4 |
-| **Action channels** | Let Vivacity *draft* messages and actions for you to approve | Gmail, Outlook, Klaviyo, Slack, WhatsApp |
-| **AI providers** | Power the drafting and reasoning behind the scenes | OpenAI, Anthropic |
+## How to use this library
 
-<Tip>
-  Most tools do both - Vivacity reads your store *and* can draft a win-back email for a lapsed customer. The approval gate applies to every outward action, every time.
-</Tip>
+The tool pages below help you prepare a task, ask useful questions and plan access. They are **educational references**, rather than a catalogue of ready-made Vivacity integrations. Product names and logos identify the tools being discussed; they do not imply a partnership or endorsement.
 
-## How a connection works
+For an actual connection, we check the provider's current options, your account, the permissions needed and a suitable test before agreeing the work.
 
-<Steps>
-  <Step title="Connect" icon="plug">
-    In **Settings → Connectors**, pick a tool and authorise read-only access (sign in, or paste an API key).
-  </Step>
-  <Step title="Sync" icon="rotate">
-    Vivacity reads your recent history to build a baseline, then keeps it fresh on a schedule.
-  </Step>
-  <Step title="Use" icon="wand-magic-sparkles">
-    The data flows into your briefings, answers and recommendations - and Vivacity can draft actions back to the tool for your approval.
-  </Step>
-</Steps>
+<CardGroup cols={2}>
+  <Card title="How connections work" href="/connectors/how-connectors-work" icon="plug">Understand authorisation and the work needed around a connection.</Card>
+  <Card title="AI tool guides" href="/tools/chatgpt" icon="robot">Try ChatGPT, Claude, Gemini or Claude Code with a practical exercise.</Card>
+  <Card title="Manage access" href="/connectors/manage-connections" icon="sliders">Keep a clear record of what is connected and who owns it.</Card>
+  <Card title="Data and permissions" href="/connectors/data-and-permissions" icon="shield-halved">Check what you share and what the tool can do.</Card>
+</CardGroup>
 
-See [How connectors work](/connectors/how-connectors-work) for sync, refresh and reconnection details.
-
-## Security & permissions
-
-- **Read-only by default.** Setup grants read access only.
-- **Credentials encrypted.** Tokens and keys are stored encrypted and are never shown back to you or your team.
-- **Revoke any time.** Disconnect a tool in one click; Vivacity stops reading immediately.
-- **Your data stays yours.** It's used only to help *you* - never shared across businesses, never used to train third-party models.
-
-Full detail in [Data & permissions](/connectors/data-and-permissions).
-
-## Who can connect tools
-
-Connectors are managed at the workspace level. Workspace **owners and admins** can add, remove and control who's allowed to create connections; teammates use the connections they've been given access to. See [Manage connections](/connectors/manage-connections).
-
-## Browse the connector library
-
-Every tool below has its own page with what syncs, how to connect, and troubleshooting. Don't see your tool? Email **support@vivacity.ai** - the list is growing.
+## Explore by category
 
 <Snippet file="connectors-by-category.mdx" />
-
-## FAQ
-
-<AccordionGroup>
-  <Accordion title="Is Vivacity going to change things in my tools?">
-    Not without your say-so. Connectors are read-only at setup, and every outward action (an email, a message, a budget change) is drafted and held for your explicit approval.
-  </Accordion>
-  <Accordion title="What if my tool isn't listed?">
-    Tell us at **support@vivacity.ai**. In the meantime, many things can be imported manually - for example via a [Google Sheet](/connectors/productivity/googlesheets) - and some tools show a **Manual fallback** option.
-  </Accordion>
-  <Accordion title="How fresh is the data?">
-    Vivacity syncs on a schedule and you can trigger a manual sync any time. See [Data & sync](/troubleshooting/data-and-sync).
-  </Accordion>
-  <Accordion title="Can I disconnect later?">
-    Yes - any time, in **Settings → Connectors**. Vivacity stops reading immediately.
-  </Accordion>
-</AccordionGroup>

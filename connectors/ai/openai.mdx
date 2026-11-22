@@ -1,88 +1,42 @@
 ---
 title: "OpenAI"
-description: "Connect OpenAI to Vivacity - gpt models for drafting."
+description: "Plan a useful AI task around OpenAI, including access, costs and review."
 icon: "robot"
 ---
 
-<Info>
-  **Category:** AI · **Access:** read-only at setup · **Actions:** drafted for your approval
-</Info>
+<img src="/logos/connectors/openai.svg" alt="OpenAI logo" width="48" height="48" noZoom />
 
-Connect **OpenAI** so Vivacity can see an AI model provider and help you act on it. Your data stays **read-only** while Vivacity learns. Anything it suggests is **drafted for you to approve** - it never sends or changes anything in OpenAI without your sign-off.
+## Where to start
 
-<Note>OpenAI is an AI model provider, not a data source. Vivacity uses it only to draft and reason over the data **you** connect.</Note>
+If you use **OpenAI**, begin with one task and the information you need for it. Practise one repeatable task using fictional information.
 
-## What Vivacity does with OpenAI
+This is a planning guide. The tools listed here are examples to discuss, and do not imply a ready-made Vivacity connection or a partnership with the provider.
 
-- Power drafting and reasoning for your workflows.
-- Run inside Vivacity's approval-gated runtime.
-- Used only on the data you connect.
+For a first chat, use the [ChatGPT guide](/tools/chatgpt). OpenAI also offers developer products; an API project is a separate technical and cost decision.
 
-## What syncs
+## Try a small exercise
 
-Vivacity reads the following from OpenAI (read-only):
+Use fictional information first. You can paste this prompt into your chosen AI assistant, then add the sample details:
 
-- Model access used to draft and reason
-- Not a data source - Vivacity only uses the data you connect
+> Help me draft a customer reply for a fictional business. Ask what outcome I need, use only the facts I provide and identify anything I should check.
 
-<Note>Vivacity only ever **reads** the data you connect. It does not write back to OpenAI unless you explicitly approve an action.</Note>
+Check names, figures, tone and missing information before using the result. A useful draft is a starting point for your judgement.
 
-## Connect OpenAI
+## Before connecting OpenAI
 
-<Steps>
-  <Step title="Open Connectors">
-    In Vivacity, go to **Settings → Connectors**.
-  </Step>
-  <Step title="Choose OpenAI">
-    Find **OpenAI** under **AI** and select **Connect**.
-  </Step>
-  <Step title="Add your OpenAI API key">
-    Paste your OpenAI API key when prompted. Vivacity stores it **encrypted** and uses it only to read the data you approve. (Find the key in your OpenAI account settings.)
-  </Step>
-  <Step title="Choose what to share">
-    Pick the account, store or property to sync, then confirm.
-  </Step>
-  <Step title="Confirm the connection">
-    Vivacity runs a first sync. You'll see a **Connected** badge when it's ready (usually a few minutes).
-  </Step>
-</Steps>
+- Define the task, the information it needs and the person who will check the result.
+- Confirm whether a manual copy or export is enough before adding another connection.
+- Check current account access, available permissions, provider terms and any subscription or usage costs.
+- Agree the specific connection and test before granting access or allowing changes.
 
-## Permissions & security
+A direct integration, if appropriate, is scoped and tested separately. Its permissions, refresh schedule, supported actions and support arrangements belong in that agreed setup.
 
-- **Read-only by default.** Setup grants read access only.
-- **You stay in control.** Every suggested action is drafted for your approval before anything happens.
-- **Encrypted & revocable.** Credentials are stored encrypted; disconnect any time in **Settings → Connectors**.
+## Keep control of access
 
-See [Data & permissions](/connectors/data-and-permissions) for the full picture.
+Use the account you own. Enter credentials in the provider's own sign-in or agreed secure setup flow, and do not paste passwords or API keys into a chat or email. Review [data and permissions](/connectors/data-and-permissions) before sharing business information.
 
-## Troubleshooting
+## Learn more
 
-<AccordionGroup>
-  <Accordion title="The connection failed or won't authorise">
-    Make sure you're signed in to the correct OpenAI account with admin access, then retry. If a pop-up was blocked, allow pop-ups for Vivacity and try again. Still stuck? See [Connection issues](/troubleshooting/connection-issues).
-  </Accordion>
-  <Accordion title="My OpenAI data looks out of date">
-    Vivacity syncs on a schedule. Trigger a manual sync from **Settings → Connectors → OpenAI → Sync now**, or see [Data & sync](/troubleshooting/data-and-sync).
-  </Accordion>
-  <Accordion title="I see “Reconnect required”">
-    OpenAI access can expire or be revoked. Open the connector and select **Reconnect** to restore it - your history is kept.
-  </Accordion>
-</AccordionGroup>
-
-## Watch: connecting OpenAI
-
-<Frame>
-  {/* Replace the src with your Loom / YouTube / Vimeo embed for OpenAI. */}
-  <iframe
-    width="100%"
-    height="400"
-    src="about:blank"
-    title="Connecting OpenAI to Vivacity"
-    frameborder="0"
-    allowfullscreen
-  ></iframe>
-</Frame>
-
-<Card title="Browse all connectors" icon="grid-2" href="/connectors/introduction">
-  See every tool you can connect to Vivacity.
-</Card>
+- [OpenAI official website](https://openai.com) for current product and account information.
+- [How connections work](/connectors/how-connectors-work) for the questions to ask before linking tools.
+- [Get started with Vivacity](/getting-started/quickstart) for help choosing your first task.

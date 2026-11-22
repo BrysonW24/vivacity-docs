@@ -1,68 +1,26 @@
 ---
-title: "Connect your first source"
-description: "Add your first connector and see what to expect during the first sync."
+title: "Choose your first source of information"
+description: "Give an AI task enough context without sharing more than it needs."
 icon: "circle-plus"
 ---
 
-Connecting your first tool is the moment Vivacity comes to life. Here's how, and what happens next.
+An AI task may need a short brief, a sample document or a small table. Begin with the smallest useful example. A direct connection to a business system is a separate decision.
 
-## Which tool should I connect first?
+## A simple starting point
 
-Pick the one that best reflects how your business makes money:
+1. Write down the question or task.
+2. Identify the information needed to answer it.
+3. Use fictional details or remove identifying and confidential information.
+4. Check that you are allowed to share the remaining material with the chosen tool.
+5. Ask for a draft and compare it with the original source.
+
+For a customer reply, a fictional enquiry and your approved service facts may be enough. For a checklist, a sample process may be enough. Neither needs access to your entire inbox.
+
+## If copying a sample is not enough
+
+A scoped integration may be appropriate for repeated work. Before authorising it, agree the account, data, permissions, actions, cost and how access will be removed. Check what the provider supports for your account.
 
 <CardGroup cols={2}>
-  <Card title="Run an online store?" icon="cart-shopping">
-    Start with **Shopify**, **WooCommerce** or **BigCommerce** - orders, products and customers.
-  </Card>
-  <Card title="Service or B2B?" icon="address-book">
-    Start with your **CRM** (HubSpot, Pipedrive, Salesforce) or **accounting** (Xero, QuickBooks).
-  </Card>
-  <Card title="Spend on ads?" icon="bullhorn">
-    Add **Meta Ads** or **Google Ads** to see spend against results.
-  </Card>
-  <Card title="Live in your inbox?" icon="envelope">
-    Connect **Gmail** or **Outlook** so Vivacity can help with customer email.
-  </Card>
+  <Card title="How connections work" icon="plug" href="/connectors/how-connectors-work">Understand sign-in, permissions and testing.</Card>
+  <Card title="Data and permissions" icon="shield-halved" href="/connectors/data-and-permissions">Choose what to share and check before sharing it.</Card>
 </CardGroup>
-
-## Connect it
-
-<Steps>
-  <Step title="Open Connectors">
-    Go to **Settings → Connectors**. Connectors are grouped by category - Ecommerce, Advertising, CRM, Finance and more.
-  </Step>
-  <Step title="Choose your tool and select Connect">
-    Find your tool and select **Connect**. Each tool has its own help page with exact steps - see the [connector library](/connectors/introduction).
-  </Step>
-  <Step title="Authorise read-only access">
-    You'll either sign in to the tool (OAuth) or paste an API key. Vivacity requests **read-only** access and stores credentials encrypted.
-  </Step>
-  <Step title="Choose what to share, then confirm">
-    Pick the store, account or property to sync and confirm.
-  </Step>
-</Steps>
-
-## What happens during the first sync
-
-- Vivacity reads your recent history to build a baseline (a few minutes for most accounts; large histories take longer).
-- You'll see a **Connected** badge, then a notification when your first briefing is ready.
-- Nothing is changed in your tool - this is a read.
-
-<Note>
-  Some connectors show a **Manual fallback** state. That means a direct connection isn't available yet, and you can import the data manually (for example via a Google Sheet) until it is.
-</Note>
-
-## Troubleshooting the first connection
-
-<AccordionGroup>
-  <Accordion title="The authorise pop-up didn't open or got blocked">
-    Allow pop-ups for Vivacity and try again. Make sure you're logged in to the right account with admin rights.
-  </Accordion>
-  <Accordion title="It says connected but I see no data yet">
-    The first sync may still be running. Give it a few minutes; see [Data & sync](/troubleshooting/data-and-sync).
-  </Accordion>
-</AccordionGroup>
-
-<Card title="Browse all connectors" icon="grid-2" href="/connectors/introduction">
-  40+ tools across 10 categories.
-</Card>

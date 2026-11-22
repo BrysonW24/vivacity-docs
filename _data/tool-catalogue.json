@@ -1,0 +1,475 @@
+{
+  "schemaVersion": "1.0.0",
+  "version": "2026-10-31-v1",
+  "purpose": "Educational tool planning catalogue, not an integration availability or partnership register.",
+  "categories": [
+    {
+      "name": "Ecommerce",
+      "slug": "ecommerce",
+      "icon": "cart-shopping",
+      "first_exercise": "Draft a product description from approved product facts.",
+      "practice_prompt": "Use only the supplied product details. Draft a short description and list any information that is missing."
+    },
+    {
+      "name": "Advertising",
+      "slug": "advertising",
+      "icon": "bullhorn",
+      "first_exercise": "Compare two campaign messages before spending.",
+      "practice_prompt": "Suggest two versions of this campaign message for the audience described. Keep the offer unchanged and explain the difference."
+    },
+    {
+      "name": "Email & SMS",
+      "slug": "email-sms",
+      "icon": "envelope",
+      "first_exercise": "Prepare a reply for a person to check and send.",
+      "practice_prompt": "Draft a polite reply using this fictional enquiry. Ask one clarifying question and do not make a booking or promise a price."
+    },
+    {
+      "name": "CRM",
+      "slug": "crm",
+      "icon": "address-book",
+      "first_exercise": "Turn a fictional meeting note into a useful follow-up.",
+      "practice_prompt": "Summarise this fictional meeting note into decisions, open questions and suggested next steps. Do not invent commitments."
+    },
+    {
+      "name": "Finance",
+      "slug": "finance",
+      "icon": "money-bill-wave",
+      "first_exercise": "Explain a sanitised report before asking an accountant to review it.",
+      "practice_prompt": "Explain the headings in this fictional report in plain English. Separate what the numbers show from possible explanations."
+    },
+    {
+      "name": "Analytics",
+      "slug": "analytics",
+      "icon": "chart-line",
+      "first_exercise": "Compare a small, sanitised set of figures using a clear definition.",
+      "practice_prompt": "Compare the two periods in this sample table. State the date ranges and metric definitions, show the calculation and list missing context."
+    },
+    {
+      "name": "Calendar",
+      "slug": "calendar",
+      "icon": "calendar",
+      "first_exercise": "Prepare a meeting agenda with a clear outcome.",
+      "practice_prompt": "Create a short agenda for this meeting goal. Include decisions needed, preparation and who should confirm the next steps."
+    },
+    {
+      "name": "Productivity",
+      "slug": "productivity",
+      "icon": "list-check",
+      "first_exercise": "Turn a sample process into a checklist.",
+      "practice_prompt": "Turn this fictional process into a checklist. Preserve the order, identify unclear steps and suggest questions for the process owner."
+    },
+    {
+      "name": "Messaging",
+      "slug": "messaging",
+      "icon": "comments",
+      "first_exercise": "Prepare a short update that a person reviews before posting.",
+      "practice_prompt": "Draft a concise team update from these approved notes. Mark anything that needs confirmation and do not send it."
+    },
+    {
+      "name": "AI",
+      "slug": "ai",
+      "icon": "robot",
+      "first_exercise": "Practise one repeatable task using fictional information.",
+      "practice_prompt": "Help me draft a customer reply for a fictional business. Ask what outcome I need, use only the facts I provide and identify anything I should check."
+    }
+  ],
+  "tools": [
+    {
+      "name": "Shopify",
+      "slug": "shopify",
+      "category": "Ecommerce",
+      "description": "Orders, products and customers",
+      "vendor_url": "https://www.shopify.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "WooCommerce",
+      "slug": "woocommerce",
+      "category": "Ecommerce",
+      "description": "WordPress storefront orders",
+      "vendor_url": "https://woocommerce.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "BigCommerce",
+      "slug": "bigcommerce",
+      "category": "Ecommerce",
+      "description": "Catalogue, orders and customers",
+      "vendor_url": "https://www.bigcommerce.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Squarespace",
+      "slug": "squarespace",
+      "category": "Ecommerce",
+      "description": "Commerce orders and analytics",
+      "vendor_url": "https://www.squarespace.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Wix",
+      "slug": "wix",
+      "category": "Ecommerce",
+      "description": "Site, store and bookings",
+      "vendor_url": "https://www.wix.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Meta Ads",
+      "slug": "meta",
+      "category": "Advertising",
+      "description": "Ad spend, campaigns and lead forms",
+      "vendor_url": "https://www.facebook.com/business",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Google Ads",
+      "slug": "googleads",
+      "category": "Advertising",
+      "description": "Spend, conversions and keywords",
+      "vendor_url": "https://ads.google.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "TikTok",
+      "slug": "tiktok",
+      "category": "Advertising",
+      "description": "Ad performance and lead gen",
+      "vendor_url": "https://www.tiktok.com/business",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "LinkedIn",
+      "slug": "linkedin",
+      "category": "Advertising",
+      "description": "Pages, posts and lead forms",
+      "vendor_url": "https://www.linkedin.com/business",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Klaviyo",
+      "slug": "klaviyo",
+      "category": "Email & SMS",
+      "description": "Email and SMS flows and revenue",
+      "vendor_url": "https://www.klaviyo.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Mailchimp",
+      "slug": "mailchimp",
+      "category": "Email & SMS",
+      "description": "Audiences, campaigns, automations",
+      "vendor_url": "https://mailchimp.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Brevo",
+      "slug": "brevo",
+      "category": "Email & SMS",
+      "description": "Email, SMS and automation",
+      "vendor_url": "https://www.brevo.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Resend",
+      "slug": "resend",
+      "category": "Email & SMS",
+      "description": "Transactional email delivery",
+      "vendor_url": "https://resend.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Gmail",
+      "slug": "gmail",
+      "category": "Email & SMS",
+      "description": "Read and draft customer email",
+      "vendor_url": "https://mail.google.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Outlook",
+      "slug": "outlook",
+      "category": "Email & SMS",
+      "description": "Read and draft customer email",
+      "vendor_url": "https://outlook.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Twilio",
+      "slug": "twilio",
+      "category": "Email & SMS",
+      "description": "SMS, voice and messaging",
+      "vendor_url": "https://www.twilio.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "HubSpot",
+      "slug": "hubspot",
+      "category": "CRM",
+      "description": "Contacts, deals and pipelines",
+      "vendor_url": "https://www.hubspot.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Salesforce",
+      "slug": "salesforce",
+      "category": "CRM",
+      "description": "Accounts, opportunities, activity",
+      "vendor_url": "https://www.salesforce.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Pipedrive",
+      "slug": "pipedrive",
+      "category": "CRM",
+      "description": "Deals, contacts and pipeline stages",
+      "vendor_url": "https://www.pipedrive.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Zoho CRM",
+      "slug": "zoho",
+      "category": "CRM",
+      "description": "Leads, contacts and deals",
+      "vendor_url": "https://www.zoho.com/crm",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "AgentBox",
+      "slug": "agentbox",
+      "category": "CRM",
+      "description": "Real-estate contacts and listings",
+      "vendor_url": "https://www.agentbox.com.au",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Xero",
+      "slug": "xero",
+      "category": "Finance",
+      "description": "Invoices and cash position",
+      "vendor_url": "https://www.xero.com/au",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Stripe",
+      "slug": "stripe",
+      "category": "Finance",
+      "description": "Payments and subscription revenue",
+      "vendor_url": "https://stripe.com/au",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "QuickBooks",
+      "slug": "quickbooks",
+      "category": "Finance",
+      "description": "Invoices, bills and reporting",
+      "vendor_url": "https://quickbooks.intuit.com/au",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Wave",
+      "slug": "wave",
+      "category": "Finance",
+      "description": "Invoicing and accounting",
+      "vendor_url": "https://www.waveapps.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Google Analytics 4",
+      "slug": "googleanalytics",
+      "category": "Analytics",
+      "description": "Traffic, conversions, attribution",
+      "vendor_url": "https://analytics.google.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Search Console",
+      "slug": "googlesearchconsole",
+      "category": "Analytics",
+      "description": "Search performance and indexing",
+      "vendor_url": "https://search.google.com/search-console",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Semrush",
+      "slug": "semrush",
+      "category": "Analytics",
+      "description": "SEO, keywords and competitors",
+      "vendor_url": "https://www.semrush.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Google Calendar",
+      "slug": "googlecalendar",
+      "category": "Calendar",
+      "description": "Bookings and appointments",
+      "vendor_url": "https://calendar.google.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Calendly",
+      "slug": "calendly",
+      "category": "Calendar",
+      "description": "Scheduling and bookings",
+      "vendor_url": "https://calendly.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Google Sheets",
+      "slug": "googlesheets",
+      "category": "Productivity",
+      "description": "Import a CRM or lead list",
+      "vendor_url": "https://sheets.google.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Google Drive",
+      "slug": "googledrive",
+      "category": "Productivity",
+      "description": "Documents and shared files",
+      "vendor_url": "https://drive.google.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Google Docs",
+      "slug": "googledocs",
+      "category": "Productivity",
+      "description": "Create and edit documents",
+      "vendor_url": "https://docs.google.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Notion",
+      "slug": "notion",
+      "category": "Productivity",
+      "description": "Pages, databases and notes",
+      "vendor_url": "https://www.notion.so",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Airtable",
+      "slug": "airtable",
+      "category": "Productivity",
+      "description": "Spreadsheet-database records",
+      "vendor_url": "https://www.airtable.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Slack",
+      "slug": "slack",
+      "category": "Productivity",
+      "description": "Send messages and alerts",
+      "vendor_url": "https://slack.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Microsoft Teams",
+      "slug": "teams",
+      "category": "Productivity",
+      "description": "Messages and channels",
+      "vendor_url": "https://www.microsoft.com/microsoft-teams",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Trello",
+      "slug": "trello",
+      "category": "Productivity",
+      "description": "Boards, lists and cards",
+      "vendor_url": "https://trello.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Asana",
+      "slug": "asana",
+      "category": "Productivity",
+      "description": "Tasks, projects and teams",
+      "vendor_url": "https://asana.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "WhatsApp",
+      "slug": "whatsapp",
+      "category": "Messaging",
+      "description": "Business messaging",
+      "vendor_url": "https://www.whatsapp.com/business",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Telegram",
+      "slug": "telegram",
+      "category": "Messaging",
+      "description": "Bot messaging and alerts",
+      "vendor_url": "https://telegram.org",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Discord",
+      "slug": "discord",
+      "category": "Messaging",
+      "description": "Community messaging",
+      "vendor_url": "https://discord.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "OpenAI",
+      "slug": "openai",
+      "category": "AI",
+      "description": "GPT models for drafting",
+      "vendor_url": "https://openai.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    },
+    {
+      "name": "Anthropic",
+      "slug": "anthropic",
+      "category": "AI",
+      "description": "Claude models for drafting",
+      "vendor_url": "https://www.anthropic.com",
+      "guide_type": "planning-reference",
+      "integration_status": "requires-project-specific-verification"
+    }
+  ]
+}

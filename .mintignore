@@ -1,0 +1,8 @@
+# Internal operations, generation inputs, tests and review evidence.
+AGENTS.md
+CLAUDE.md
+README.md
+_audit/**
+_data/**
+_scripts/**
+_tests/**
