@@ -63,7 +63,8 @@
             "pages": [
               "app/enquiries",
               "app/assistant",
-              "app/sending"
+              "app/sending",
+              "app/privacy"
             ]
           },
           {
