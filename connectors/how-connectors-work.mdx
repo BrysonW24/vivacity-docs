@@ -1,51 +1,33 @@
 ---
-title: "How connectors work"
-description: "Authorisation, syncing, refresh schedules and reconnecting - the mechanics."
+title: "How connections work"
+description: "Understand the questions to ask before linking business tools."
 icon: "rotate"
 ---
 
-A connector is a secure, read-only link between Vivacity and one of your tools. Here's what happens under the hood.
+## Two common ways to authorise access
 
-## Authorisation
+**Provider sign-in** can let you grant an application specified permissions without sharing your password. Read the consent screen and confirm the account and requested access.
 
-When you connect a tool, you authorise access in one of two ways:
+**An API key or token** may authorise software to use a provider's service. Treat it as a secret. Its permissions and billing exposure depend on the provider and account.
 
-- **Sign-in (OAuth)** - you sign in to the tool and approve access. Vivacity never sees your password, and access can be revoked from either side.
-- **API key** - for tools without sign-in flow, you paste a key. Vivacity stores it **encrypted** and uses it only for the access you granted.
+The actual method, available permissions and costs must be checked for the particular tool and task.
 
-Either way, setup requests **read-only** scopes.
+## Define the connection
 
-## Syncing
+| Question | What to agree |
+| --- | --- |
+| What does it need to read? | Specific accounts, records, files and date ranges. |
+| What may it change? | Any writes, sends, bookings, publishing or spending, with approval rules. |
+| When does it run? | A manual trigger or agreed schedule, with limits and failure handling. |
+| How do we check it? | A small test, expected output and someone responsible for review. |
+| How do we stop it? | Provider revocation, workflow shutdown and handling of any retained copies. |
 
-<Steps>
-  <Step title="First sync (baseline)">
-    Vivacity reads your recent history to learn what's normal. This takes a few minutes for most accounts; large histories take longer.
-  </Step>
-  <Step title="Scheduled refresh">
-    After that, Vivacity refreshes on a schedule so your briefings and answers stay current.
-  </Step>
-  <Step title="Manual sync">
-    Need the latest right now? Use **Settings → Connectors → [tool] → Sync now**.
-  </Step>
-</Steps>
+## Read-only needs checking
 
-## Connection states
+Do not assume a connection is read-only because its first task is reading. Check the permissions actually requested. If the provider cannot narrow access enough, discuss a safer alternative before proceeding.
 
-| State | Meaning |
-| :--- | :--- |
-| **Connected** | Working and syncing normally. |
-| **Syncing** | A sync is in progress (first sync or refresh). |
-| **Reconnect required** | Access expired or was revoked - open the connector and select **Reconnect**. |
-| **Manual fallback** | A direct connection isn't available yet; import the data manually for now. |
+## Check before relying on it
 
-## Reconnecting
+A successful sign-in alone does not establish that a workflow produces correct results. Test the relevant data and actions, including missing information and failures.
 
-Access can expire or be revoked by the tool (a password change, a removed permission). When that happens you'll see **Reconnect required** and a prompt. Reconnecting restores the link - **your history is kept**, nothing is lost.
-
-## Rate limits & large accounts
-
-Vivacity respects each tool's API limits and backs off politely, so a big first sync won't disrupt your tool. Very large histories simply take a little longer to fully load.
-
-<Card title="Having trouble?" icon="wrench" href="/troubleshooting/connection-issues">
-  Connection issues, expired access and sync delays - fixes here.
-</Card>
+[Plan the first source](/getting-started/connect-your-first-source) · [Manage access](/connectors/manage-connections).

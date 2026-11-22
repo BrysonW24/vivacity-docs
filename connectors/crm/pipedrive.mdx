@@ -1,87 +1,46 @@
 ---
 title: "Pipedrive"
-description: "Connect Pipedrive to Vivacity - deals, contacts and pipeline stages."
+description: "Where Pipedrive stands in the Vivacity app, and planning AI tasks around it."
 icon: "address-book"
 ---
 
+<img src="/logos/connectors/pipedrive.png" alt="Pipedrive logo" width="48" height="48" noZoom />
+
+## In the Vivacity app
+
 <Info>
-  **Category:** CRM · **Access:** read-only at setup · **Actions:** drafted for your approval
+Pipedrive is listed on **Connections** in the Vivacity app and is coming. It can't be used in the app yet.
 </Info>
 
-Connect **Pipedrive** so Vivacity can see your CRM and help you act on it. Your data stays **read-only** while Vivacity learns. Anything it suggests is **drafted for you to approve** - it never sends or changes anything in Pipedrive without your sign-off.
+## Where to start
 
-## What Vivacity does with Pipedrive
+If you use **Pipedrive**, begin with one task and the information you need for it. Turn a fictional meeting note into a useful follow-up.
 
-- Read contacts, deals and pipeline stages (read-only).
-- Rank who to contact next and explain why.
-- Draft outreach and follow-ups for your approval.
+The rest of this page is a planning guide for using Pipedrive with AI tools generally. Naming Pipedrive does not imply a partnership with the provider.
 
-## What syncs
+## Try a small exercise
 
-Vivacity reads the following from Pipedrive (read-only):
+Use fictional information first. You can paste this prompt into your chosen AI assistant, then add the sample details:
 
-- Contacts, companies and leads
-- Deals / opportunities and pipeline stages
-- Activity, notes and record owners
+> Summarise this fictional meeting note into decisions, open questions and suggested next steps. Do not invent commitments.
 
-<Note>Vivacity only ever **reads** the data you connect. It does not write back to Pipedrive unless you explicitly approve an action.</Note>
+Check names, figures, tone and missing information before using the result. A useful draft is a starting point for your judgement.
 
-## Connect Pipedrive
+## Before connecting Pipedrive
 
-<Steps>
-  <Step title="Open Connectors">
-    In Vivacity, go to **Settings → Connectors**.
-  </Step>
-  <Step title="Choose Pipedrive">
-    Find **Pipedrive** under **CRM** and select **Connect**.
-  </Step>
-  <Step title="Authorise with Pipedrive">
-    You'll be redirected to Pipedrive to sign in and approve **read-only** access. Vivacity never sees your Pipedrive password.
-  </Step>
-  <Step title="Choose what to share">
-    Pick the account, store or property to sync, then confirm.
-  </Step>
-  <Step title="Confirm the connection">
-    Vivacity runs a first sync. You'll see a **Connected** badge when it's ready (usually a few minutes).
-  </Step>
-</Steps>
+- Define the task, the information it needs and the person who will check the result.
+- Confirm whether a manual copy or export is enough before adding another connection.
+- Check current account access, available permissions, provider terms and any subscription or usage costs.
+- Agree the specific connection and test before granting access or allowing changes.
 
-## Permissions & security
+A direct integration, if appropriate, is scoped and tested separately. Its permissions, refresh schedule, supported actions and support arrangements belong in that agreed setup.
 
-- **Read-only by default.** Setup grants read access only.
-- **You stay in control.** Every suggested action is drafted for your approval before anything happens.
-- **Encrypted & revocable.** Credentials are stored encrypted; disconnect any time in **Settings → Connectors**.
+## Keep control of access
 
-See [Data & permissions](/connectors/data-and-permissions) for the full picture.
+Use the account you own. Enter credentials in the provider's own sign-in or agreed secure setup flow, and do not paste passwords or API keys into a chat or email. Review [data and permissions](/connectors/data-and-permissions) before sharing business information.
 
-## Troubleshooting
+## Learn more
 
-<AccordionGroup>
-  <Accordion title="The connection failed or won't authorise">
-    Make sure you're signed in to the correct Pipedrive account with admin access, then retry. If a pop-up was blocked, allow pop-ups for Vivacity and try again. Still stuck? See [Connection issues](/troubleshooting/connection-issues).
-  </Accordion>
-  <Accordion title="My Pipedrive data looks out of date">
-    Vivacity syncs on a schedule. Trigger a manual sync from **Settings → Connectors → Pipedrive → Sync now**, or see [Data & sync](/troubleshooting/data-and-sync).
-  </Accordion>
-  <Accordion title="I see “Reconnect required”">
-    Pipedrive access can expire or be revoked. Open the connector and select **Reconnect** to restore it - your history is kept.
-  </Accordion>
-</AccordionGroup>
-
-## Watch: connecting Pipedrive
-
-<Frame>
-  {/* Replace the src with your Loom / YouTube / Vimeo embed for Pipedrive. */}
-  <iframe
-    width="100%"
-    height="400"
-    src="about:blank"
-    title="Connecting Pipedrive to Vivacity"
-    frameborder="0"
-    allowfullscreen
-  ></iframe>
-</Frame>
-
-<Card title="Browse all connectors" icon="grid-2" href="/connectors/introduction">
-  See every tool you can connect to Vivacity.
-</Card>
+- [Pipedrive official website](https://www.pipedrive.com) for current product and account information.
+- [How connections work](/connectors/how-connectors-work) for the questions to ask before linking tools.
+- [Get started with Vivacity](/getting-started/quickstart) for help choosing your first task.

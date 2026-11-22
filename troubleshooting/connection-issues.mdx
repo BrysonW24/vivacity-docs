@@ -1,38 +1,33 @@
 ---
-title: "Connection issues"
-description: "Fix tools that won't connect, keep disconnecting, or need reconnecting."
+title: "Access and connection issues"
+description: "Check the account and actual permissions before reconnecting a tool."
 icon: "plug-circle-exclamation"
 ---
 
-<AccordionGroup>
-  <Accordion title="The authorise window didn't open or was blocked">
-    Your browser likely blocked the pop-up. Allow pop-ups for Vivacity and select **Connect** again. On mobile, try a desktop browser for the initial connection.
-  </Accordion>
-  <Accordion title="“You don't have permission” during connect">
-    You need an **admin** role in the tool you're connecting (e.g. store owner, ad-account admin). Sign in with an account that has admin access, or ask your admin to create the connection.
-  </Accordion>
-  <Accordion title="It connected but immediately says “Reconnect required”">
-    This usually means the tool revoked access - often after a password change, an MFA reset, or a removed app permission. Open the connector and select **Reconnect**, then re-authorise. Your history is kept.
-  </Accordion>
-  <Accordion title="An API-key tool won't accept my key">
-    Re-copy the key (watch for trailing spaces), confirm it has read access, and that it hasn't expired or been rotated. Generate a fresh key in the tool if unsure, then paste it again.
-  </Accordion>
-  <Accordion title="The connection keeps dropping">
-    Check whether the tool has a session/security policy that expires app access, and that the account you used is still active. If it persists, disconnect and reconnect from scratch.
-  </Accordion>
-  <Accordion title="My tool isn't in the list">
-    It may not have a direct connector yet. Check for a **Manual fallback** option, import via [Google Sheets](/connectors/productivity/googlesheets), and tell us at **support@vivacity.ai** so we can prioritise it.
-  </Accordion>
-</AccordionGroup>
+## In the Vivacity app
 
-## Still not working?
+- **Connect opens nothing:** allow pop-ups for the app, then press **Connect** again.
+- **The app says it isn't set up:** Vivacity hasn't switched that app on for your business yet. Ask through **Book a chat** in the menu.
+- **Signed in to the wrong account:** press **Disconnect** on the app's card in **Connections**, then connect again with the right one.
+- **What each app does today:** see its page under [Connections](/app/connections/overview).
 
-Email **support@vivacity.ai** with:
+## First checks
 
-- the **tool name**,
-- the **connection state** you see (e.g. *Reconnect required*),
-- a **screenshot** of any error.
+1. Confirm you are using the intended account and the provider's genuine website or app.
+2. Read the exact error and check the provider's current help or service-status page.
+3. Confirm you are authorised to grant the access requested.
+4. If it is an agreed integration, check the handover instructions and what else depends on it before changing credentials or revoking access.
 
-<Card title="Data looks wrong after connecting?" icon="rotate" href="/troubleshooting/data-and-sync">
-  That's usually a sync question - fixes here.
-</Card>
+## Sign-in or consent problems
+
+A blocked window, expired session or account restriction may interrupt sign-in. Check the browser message and provider guidance. Do not widen permissions simply to make an error disappear.
+
+## Keys and tokens
+
+A key may be expired, restricted or for a different account. Its owner should inspect it in the provider's own secure settings. Never paste it into an email, screenshot or general AI chat.
+
+## If the connection is not suitable
+
+A tool may lack the required access for your account, or the permissions may be broader than you want. A manual export, a smaller task or another approach may be more appropriate.
+
+[Contact Vivacity](mailto:hello@vivacityai.com.au) with the tool, sanitised error and expected behaviour. [Manage access](/connectors/manage-connections) explains the information to keep.

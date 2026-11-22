@@ -1,48 +1,39 @@
 ---
-title: "Manage connections"
-description: "Add, reconnect, disconnect and control who can manage connectors."
+title: "Manage access to your tools"
+description: "Keep ownership, permissions and removal clear for each connection."
 icon: "sliders"
 ---
 
-All your connections live in **Settings → Connectors**. Here's how to manage them.
+## In the Vivacity app
 
-## Add a connection
+Open **Connections** in the menu. Each app has a card that says whether it is connected.
 
-<Steps>
-  <Step title="Open Settings → Connectors" />
-  <Step title="Find your tool by category and select Connect" />
-  <Step title="Authorise read-only access and choose what to share" />
-</Steps>
+- **Connect:** choose the app and press **Connect**, then sign in on the app's own screen. Vivacity never sees your password.
+- **Disconnect:** press **Disconnect** on the same card. The app stops reading from it at once.
+- **What each app does today:** see [Connections](/app/connections/overview).
 
-Each tool's page has exact steps - browse the [connector library](/connectors/introduction).
+The rest of this page is good practice for any tool you connect, in the app or elsewhere.
 
-## Reconnect or sync
+## Keeping track of access
 
-- **Reconnect** - when a connector shows *Reconnect required*, open it and select **Reconnect**. History is preserved.
-- **Sync now** - force a fresh read with **Sync now** on the connector.
+Keep a simple connection record alongside the instructions for the specific workflow. The provider's account settings remain the place to inspect the access it has granted.
 
-## Disconnect a tool
+## Record what matters
 
-Open the connector and select **Disconnect**. Vivacity stops reading immediately. You can reconnect later; reconnecting re-reads your history to rebuild the picture.
+- The tool and account involved, plus the business owner responsible.
+- The application or workflow receiving access and the task it serves.
+- Permissions granted, including anything it can write, send or spend.
+- Where the secure credential is managed, without copying the secret into the record.
+- The test, review point and instructions for stopping the workflow.
 
-<Note>
-  Disconnecting a tool removes it from future briefings and answers. It does **not** change anything inside the tool itself.
-</Note>
+## When something changes
 
-## Who can manage connections
+Review access when a person leaves, an account changes, a task stops or a provider asks for new permissions. Pause dependent workflows if you are unsure whether the access remains appropriate.
 
-Connectors are a **workspace-level** setting:
+## Remove access deliberately
 
-- **Owners & admins** can add, remove, and decide who's allowed to create connections.
-- **Members** use the connections they've been granted access to.
-- Sensitive connections (e.g. email, payments) can be restricted to admins.
+Use the provider's current controls to revoke the relevant app, key or token, and stop any associated scheduled workflow. Revocation and deletion of data already copied are separate tasks; confirm both where needed.
 
-Manage roles in **Settings → Team**. See [Account & billing](/account/account-and-billing) for workspace and team settings.
+Changing credentials or reconnecting can affect other work. Check what depends on the connection before making changes.
 
-## Connection access
-
-When you create a connection you can choose who can use it - just you, specific teammates, or the whole workspace. This keeps sensitive sources (like an inbox or payment account) limited to the right people.
-
-<Card title="What each connection can see" icon="shield-halved" href="/connectors/data-and-permissions">
-  The data, permissions and privacy detail.
-</Card>
+[Connection troubleshooting](/troubleshooting/connection-issues) · [Data and permissions](/connectors/data-and-permissions).

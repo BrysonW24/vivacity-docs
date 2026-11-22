@@ -1,87 +1,46 @@
 ---
 title: "QuickBooks"
-description: "Connect QuickBooks to Vivacity - invoices, bills and reporting."
+description: "Where QuickBooks stands in the Vivacity app, and planning AI tasks around it."
 icon: "money-bill-wave"
 ---
 
+<img src="/logos/connectors/quickbooks.svg" alt="QuickBooks logo" width="48" height="48" noZoom />
+
+## In the Vivacity app
+
 <Info>
-  **Category:** Finance · **Access:** read-only at setup · **Actions:** drafted for your approval
+QuickBooks is listed on **Connections** in the Vivacity app and is coming. It can't be used in the app yet.
 </Info>
 
-Connect **QuickBooks** so Vivacity can see your accounting and payments and help you act on it. Your data stays **read-only** while Vivacity learns. Anything it suggests is **drafted for you to approve** - it never sends or changes anything in QuickBooks without your sign-off.
+## Where to start
 
-## What Vivacity does with QuickBooks
+If you use **QuickBooks**, begin with one task and the information you need for it. Explain a sanitised report before asking an accountant to review it.
 
-- Read invoices, payments and cash position (read-only).
-- Surface overdue invoices and cash-flow risks.
-- Draft polite payment reminders for your approval.
+The rest of this page is a planning guide for using QuickBooks with AI tools generally. Naming QuickBooks does not imply a partnership with the provider.
 
-## What syncs
+## Try a small exercise
 
-Vivacity reads the following from QuickBooks (read-only):
+Use fictional information first. You can paste this prompt into your chosen AI assistant, then add the sample details:
 
-- Invoices, bills and payment status
-- Payments, payouts and subscription revenue
-- Cash position and overdue balances
+> Explain the headings in this fictional report in plain English. Separate what the numbers show from possible explanations.
 
-<Note>Vivacity only ever **reads** the data you connect. It does not write back to QuickBooks unless you explicitly approve an action.</Note>
+Check names, figures, tone and missing information before using the result. A useful draft is a starting point for your judgement.
 
-## Connect QuickBooks
+## Before connecting QuickBooks
 
-<Steps>
-  <Step title="Open Connectors">
-    In Vivacity, go to **Settings → Connectors**.
-  </Step>
-  <Step title="Choose QuickBooks">
-    Find **QuickBooks** under **Finance** and select **Connect**.
-  </Step>
-  <Step title="Authorise with QuickBooks">
-    You'll be redirected to QuickBooks to sign in and approve **read-only** access. Vivacity never sees your QuickBooks password.
-  </Step>
-  <Step title="Choose what to share">
-    Pick the account, store or property to sync, then confirm.
-  </Step>
-  <Step title="Confirm the connection">
-    Vivacity runs a first sync. You'll see a **Connected** badge when it's ready (usually a few minutes).
-  </Step>
-</Steps>
+- Define the task, the information it needs and the person who will check the result.
+- Confirm whether a manual copy or export is enough before adding another connection.
+- Check current account access, available permissions, provider terms and any subscription or usage costs.
+- Agree the specific connection and test before granting access or allowing changes.
 
-## Permissions & security
+A direct integration, if appropriate, is scoped and tested separately. Its permissions, refresh schedule, supported actions and support arrangements belong in that agreed setup.
 
-- **Read-only by default.** Setup grants read access only.
-- **You stay in control.** Every suggested action is drafted for your approval before anything happens.
-- **Encrypted & revocable.** Credentials are stored encrypted; disconnect any time in **Settings → Connectors**.
+## Keep control of access
 
-See [Data & permissions](/connectors/data-and-permissions) for the full picture.
+Use the account you own. Enter credentials in the provider's own sign-in or agreed secure setup flow, and do not paste passwords or API keys into a chat or email. Review [data and permissions](/connectors/data-and-permissions) before sharing business information.
 
-## Troubleshooting
+## Learn more
 
-<AccordionGroup>
-  <Accordion title="The connection failed or won't authorise">
-    Make sure you're signed in to the correct QuickBooks account with admin access, then retry. If a pop-up was blocked, allow pop-ups for Vivacity and try again. Still stuck? See [Connection issues](/troubleshooting/connection-issues).
-  </Accordion>
-  <Accordion title="My QuickBooks data looks out of date">
-    Vivacity syncs on a schedule. Trigger a manual sync from **Settings → Connectors → QuickBooks → Sync now**, or see [Data & sync](/troubleshooting/data-and-sync).
-  </Accordion>
-  <Accordion title="I see “Reconnect required”">
-    QuickBooks access can expire or be revoked. Open the connector and select **Reconnect** to restore it - your history is kept.
-  </Accordion>
-</AccordionGroup>
-
-## Watch: connecting QuickBooks
-
-<Frame>
-  {/* Replace the src with your Loom / YouTube / Vimeo embed for QuickBooks. */}
-  <iframe
-    width="100%"
-    height="400"
-    src="about:blank"
-    title="Connecting QuickBooks to Vivacity"
-    frameborder="0"
-    allowfullscreen
-  ></iframe>
-</Frame>
-
-<Card title="Browse all connectors" icon="grid-2" href="/connectors/introduction">
-  See every tool you can connect to Vivacity.
-</Card>
+- [QuickBooks official website](https://quickbooks.intuit.com/au) for current product and account information.
+- [How connections work](/connectors/how-connectors-work) for the questions to ask before linking tools.
+- [Get started with Vivacity](/getting-started/quickstart) for help choosing your first task.
