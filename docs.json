@@ -149,11 +149,7 @@
             "group": "Connections",
             "icon": "plug",
             "pages": [
-              "app/connections/overview",
-              "app/connections/xero",
-              "app/connections/hubspot",
-              "app/connections/google-calendar",
-              "app/connections/gmail"
+              "app/connections/overview"
             ]
           }
         ]

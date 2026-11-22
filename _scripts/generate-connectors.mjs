@@ -28,22 +28,33 @@ export function buildOutputs(root = ROOT) {
     const c = cats.get(tool.category);
     if (!c) throw new Error(`Unknown category: ${tool.category}`);
     if (tool.guide_type !== 'planning-reference' || tool.integration_status !== 'requires-project-specific-verification') throw new Error(`Unreviewed capability status: ${tool.slug}`);
+    if (!['works', 'connects', 'coming'].includes(tool.app_status)) throw new Error(`Missing app status: ${tool.slug}`);
+    if (tool.app_status === 'works' && !(tool.app_does || []).length) throw new Error(`A working app needs what it does: ${tool.slug}`);
+    const inApp = {
+      works: `<Check>\nWorks in the Vivacity app today.\n</Check>\n\n${(tool.app_does || []).map((line) => `- ${line}`).join('\n')}\n\n${tool.slug === 'twilio' ? 'See [how enquiries reach you](/app/enquiries).' : `Connect it from **Connections** in the app, and disconnect from the same card at any time. See [all connections](/app/connections/overview).`}`,
+      connects: `<Info>\nYou can connect ${tool.name} in the Vivacity app today. Nothing is read from it yet.\n</Info>\n\nConnect it from **Connections** in the app, and disconnect from the same card at any time. See [all connections](/app/connections/overview).`,
+      coming: `<Info>\n${tool.name} is listed on **Connections** in the Vivacity app and is coming. It can't be used in the app yet.\n</Info>`,
+    }[tool.app_status];
     let further = '';
     if (tool.slug === 'openai') further = '\nFor a first chat, use the [ChatGPT guide](/tools/chatgpt). OpenAI also offers developer products; an API project is a separate technical and cost decision.\n';
     if (tool.slug === 'anthropic') further = '\nStart with the [Claude guide](/tools/claude). For software projects, see [Claude Code](/tools/claude-code).\n';
     outputs.set(`connectors/${c.slug}/${tool.slug}.mdx`, `---
 title: ${quote(tool.name)}
-description: ${quote(`Plan a useful AI task around ${tool.name}, including access, costs and review.`)}
+description: ${quote(tool.app_status === 'works' ? `What the Vivacity app does with ${tool.name}, and planning AI tasks around it.` : `Where ${tool.name} stands in the Vivacity app, and planning AI tasks around it.`)}
 icon: ${quote(c.icon)}
 ---
 
 <img src="${logo(tool.slug)}" alt="${tool.name} logo" width="48" height="48" noZoom />
 
+## In the Vivacity app
+
+${inApp}
+
 ## Where to start
 
 If you use **${tool.name}**, begin with one task and the information you need for it. ${c.first_exercise}
 
-This is a planning guide. The tools listed here are examples to discuss, and do not imply a ready-made Vivacity connection or a partnership with the provider.
+The rest of this page is a planning guide for using ${tool.name} with AI tools generally. Naming ${tool.name} does not imply a partnership with the provider.
 ${further}
 ## Try a small exercise
 
