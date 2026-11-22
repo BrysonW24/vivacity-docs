@@ -85,7 +85,7 @@ Use the account you own. Enter credentials in the provider's own sign-in or agre
 `);
   }
   outputs.set('snippets/connectors-by-category.mdx', catalogue.categories.map((c) => `### ${c.name}\n\n<CardGroup cols={2}>\n${catalogue.tools.filter((t) => t.category === c.name).map((t) => `  <Card title="${t.name}" icon="${logo(t.slug)}" href="/connectors/${c.slug}/${t.slug}">Plan a task, access and review around ${t.name}.</Card>`).join('\n')}\n</CardGroup>`).join('\n\n') + '\n');
-  const docs = { ...settings, navigation: { tabs: [ { tab: 'Practical guides', groups: guide_groups }, ...(app_groups ? [{ tab: 'The Vivacity app', groups: app_groups }] : []), { tab: 'Tools to explore', groups: catalogue.categories.map((c) => ({ group: c.name, icon: c.icon, pages: catalogue.tools.filter((t) => t.category === c.name).map((t) => `connectors/${c.slug}/${t.slug}`) })) } ] } };
+  const docs = { ...settings, navigation: { tabs: [ ...(app_groups ? [{ tab: 'The Vivacity app', groups: app_groups }] : []), { tab: 'Apps', groups: catalogue.categories.map((c) => ({ group: c.name, icon: c.icon, pages: catalogue.tools.filter((t) => t.category === c.name).map((t) => `connectors/${c.slug}/${t.slug}`) })) }, { tab: 'Learn AI', groups: guide_groups } ] } };
   outputs.set('docs.json', JSON.stringify(docs, null, 2) + '\n');
   return outputs;
 }

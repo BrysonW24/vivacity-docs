@@ -46,85 +46,6 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Practical guides",
-        "groups": [
-          {
-            "group": "Start here",
-            "icon": "play",
-            "pages": [
-              "index",
-              "getting-started/quickstart",
-              "getting-started/how-vivacity-works",
-              "getting-started/connect-your-first-source"
-            ]
-          },
-          {
-            "group": "Use AI in your work",
-            "icon": "lightbulb",
-            "pages": [
-              "features/overview",
-              "features/ask-vivacity",
-              "features/daily-briefing",
-              "features/recommendations-and-approvals"
-            ]
-          },
-          {
-            "group": "AI tool guides",
-            "icon": "robot",
-            "pages": [
-              "tools/chatgpt",
-              "tools/claude",
-              "tools/gemini",
-              "tools/claude-code",
-              "tools/skills-and-mcp"
-            ]
-          },
-          {
-            "group": "Connections and data",
-            "icon": "plug",
-            "pages": [
-              "connectors/introduction",
-              "connectors/how-connectors-work",
-              "connectors/manage-connections",
-              "connectors/data-and-permissions"
-            ]
-          },
-          {
-            "group": "Practical habits",
-            "icon": "list-check",
-            "pages": [
-              "best-practices/get-the-most-from-vivacity",
-              "best-practices/writing-good-questions"
-            ]
-          },
-          {
-            "group": "Help",
-            "icon": "wrench",
-            "pages": [
-              "troubleshooting/overview",
-              "troubleshooting/connection-issues",
-              "troubleshooting/data-and-sync",
-              "troubleshooting/faq"
-            ]
-          },
-          {
-            "group": "Watch and learn",
-            "icon": "circle-play",
-            "pages": [
-              "videos/video-library"
-            ]
-          },
-          {
-            "group": "Working with Vivacity",
-            "icon": "shield-check",
-            "pages": [
-              "account/account-and-billing",
-              "account/security-and-privacy"
-            ]
-          }
-        ]
-      },
-      {
         "tab": "The Vivacity app",
         "groups": [
           {
@@ -155,7 +76,7 @@
         ]
       },
       {
-        "tab": "Tools to explore",
+        "tab": "Apps",
         "groups": [
           {
             "group": "Ecommerce",
@@ -259,6 +180,85 @@
             "pages": [
               "connectors/ai/openai",
               "connectors/ai/anthropic"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Learn AI",
+        "groups": [
+          {
+            "group": "Start here",
+            "icon": "play",
+            "pages": [
+              "index",
+              "getting-started/quickstart",
+              "getting-started/how-vivacity-works",
+              "getting-started/connect-your-first-source"
+            ]
+          },
+          {
+            "group": "Use AI in your work",
+            "icon": "lightbulb",
+            "pages": [
+              "features/overview",
+              "features/ask-vivacity",
+              "features/daily-briefing",
+              "features/recommendations-and-approvals"
+            ]
+          },
+          {
+            "group": "AI tool guides",
+            "icon": "robot",
+            "pages": [
+              "tools/chatgpt",
+              "tools/claude",
+              "tools/gemini",
+              "tools/claude-code",
+              "tools/skills-and-mcp"
+            ]
+          },
+          {
+            "group": "Connections and data",
+            "icon": "plug",
+            "pages": [
+              "connectors/introduction",
+              "connectors/how-connectors-work",
+              "connectors/manage-connections",
+              "connectors/data-and-permissions"
+            ]
+          },
+          {
+            "group": "Practical habits",
+            "icon": "list-check",
+            "pages": [
+              "best-practices/get-the-most-from-vivacity",
+              "best-practices/writing-good-questions"
+            ]
+          },
+          {
+            "group": "Help",
+            "icon": "wrench",
+            "pages": [
+              "troubleshooting/overview",
+              "troubleshooting/connection-issues",
+              "troubleshooting/data-and-sync",
+              "troubleshooting/faq"
+            ]
+          },
+          {
+            "group": "Watch and learn",
+            "icon": "circle-play",
+            "pages": [
+              "videos/video-library"
+            ]
+          },
+          {
+            "group": "Working with Vivacity",
+            "icon": "shield-check",
+            "pages": [
+              "account/account-and-billing",
+              "account/security-and-privacy"
             ]
           }
         ]
